@@ -1,4 +1,3 @@
-
 import os
 import pandas as pd
 import boto3
@@ -19,5 +18,5 @@ def source_dataset(s3_bucket, new_s3_key):
 	folder = "/tmp"
 
 	for filename in os.listdir(folder):
-        print(filename)
-        s3.upload_file("/tmp/" + filename, s3_bucket, new_s3_key + filename)
+		print(filename)
+		s3.upload_file("/tmp/" + filename, s3_bucket, new_s3_key + filename)
