@@ -131,7 +131,7 @@ Resources:
     Type: AWS::Events::Rule
     Properties:
       Description: "ScheduledRule"
-      ScheduleExpression: "rate(2 hours)"
+      ScheduleExpression: "cron(0 2 * * ? *)"
       State: "ENABLED"
       Targets:
         -
