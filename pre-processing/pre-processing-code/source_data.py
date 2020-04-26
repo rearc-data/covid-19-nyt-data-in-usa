@@ -8,10 +8,10 @@ def source_dataset(s3_bucket, new_s3_key):
 
 	# Download the file from `url` and save it locally under `file_name`:
 	urllib.request.urlretrieve(
-		source_dataset_url + 'us-states.csv', '/tmp/' + new_filename + 'us-states.csv')
+		source_dataset_url + 'us-states.csv', '/tmp/us-states.csv')
 
 	urllib.request.urlretrieve(
-		source_dataset_url + 'us-counties.csv', '/tmp/' + new_filename + 'us-counties.csv')
+		source_dataset_url + 'us-counties.csv', '/tmp/us-counties.csv')
 
 	#uploading new s3 dataset
 	s3 = boto3.client("s3")
