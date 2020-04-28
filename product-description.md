@@ -1,6 +1,6 @@
 # Coronavirus (COVID-19) Data in the United States | The New York Times
 
-The source code outlining how this product gathers, transforms, revises and publishes its datasets) is avaiable at [https://github.com/rearc-data/covid-19-nyt-data-in-usa](https://github.com/rearc-data/covid-19-nyt-data-in-usa).
+The source code outlining how this product gathers, transforms, revises and publishes its datasets is avaiable at [https://github.com/rearc-data/covid-19-nyt-data-in-usa](https://github.com/rearc-data/covid-19-nyt-data-in-usa).
 
 ## Product Description
 The New York Times is releasing a series of data files with cumulative counts of coronavirus cases in the United States, at the state and county level, over time. This is time series data from state and local governments and health departments in an attempt to provide a complete record of the ongoing outbreak.
