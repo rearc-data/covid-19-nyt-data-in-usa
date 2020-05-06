@@ -6,8 +6,6 @@ def source_dataset(s3_bucket, new_s3_key):
 
 	source_dataset_url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/'
 
-	# Download the file from `url` and save it locally under `file_name`:
-
 	urllib.request.urlretrieve(
 		source_dataset_url + 'us.csv', '/tmp/us.csv')
 
