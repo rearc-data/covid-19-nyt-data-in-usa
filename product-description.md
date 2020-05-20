@@ -9,10 +9,10 @@ Since late January, The Times has tracked cases of coronavirus in real time as t
 
 The New York Times uses this data to power maps and reporting, tracking the outbreak, and it is now being made available to the public in response to requests from researchers, scientists and government officials who would like access to the data to better understand the outbreak.
 
-The NYT's data begins with the first reported coronavirus case in Washington State on Jan. 21, 2020. Data on cumulative coronavirus cases and deaths can be found in two files for states and counties. The dataset columns are:
+The NYT's data begins with the first reported coronavirus case in Washington State on Jan. 21, 2020. Data on cumulative coronavirus cases and deaths can be found in two files for states and counties.
 
 #### Data Sources
-The datasets included with this product are provided in CSV format.
+The datasets included with this product are provided in CSV format.  The dataset columns are:
 
 - us.csv: `date, cases, deaths`
 - us-states.csv: `date, state, fips, cases, deaths`
