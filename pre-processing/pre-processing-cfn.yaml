@@ -62,8 +62,8 @@ Resources:
             - - Fn::Sub: ${DataSetName}
               - '/automation/pre-processing-code.zip'
       Handler: "lambda_function.lambda_handler"
-      MemorySize: 128
-      Timeout: 120
+      MemorySize: 1024
+      Timeout: 300
       Role:
         Fn::GetAtt:
           - LambdaRole
@@ -85,7 +85,7 @@ Resources:
     Type: AWS::Events::Rule
     Properties:
       Description: "ScheduledRule"
-      ScheduleExpression: "rate(2 hours)"
+      ScheduleExpression: "cron(0 * * * ? *)"
       State: "ENABLED"
       Targets:
         -
