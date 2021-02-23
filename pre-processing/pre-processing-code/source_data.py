@@ -46,22 +46,6 @@ def data_to_s3(endpoint):
 
     return True
 
-    # # variables/resources used to upload to s3
-    # s3_bucket = os.environ['S3_BUCKET']
-    # data_set_name = os.environ['DATA_SET_NAME']
-    # new_s3_key = data_set_name + '/dataset/'
-    # s3 = boto3.client('s3')
-
-    # s3.upload_file(file_location, s3_bucket, new_s3_key + filename)
-
-    # print('Uploaded: ' + filename)
-
-    # # deletes to preserve limited space in aws lamdba
-    # os.remove(file_location)
-
-    # # dicts to be used to add assets to the dataset revision
-    # return {'Bucket': s3_bucket, 'Key': new_s3_key + filename}
-
 
 def source_dataset(s3_bucket, new_s3_key):
 
